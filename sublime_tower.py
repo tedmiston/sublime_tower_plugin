@@ -7,7 +7,6 @@ If you regularly open a shell to run `$ gittower .`, this is faster.
 import os.path
 import subprocess
 
-import sublime
 import sublime_plugin
 
 
