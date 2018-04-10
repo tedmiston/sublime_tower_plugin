@@ -1,6 +1,6 @@
 # Sublime Tower plugin
 
-Open git repos from Sublime Text in [Tower](https://www.git-tower.com/mac/).
+Open git repos from Sublime Text in [Tower](https://www.git-tower.com/).
 
 ## Install
 
