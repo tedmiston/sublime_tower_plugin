@@ -2,6 +2,8 @@
 
 Open git repos from Sublime Text in [Tower](https://www.git-tower.com/).
 
+![Demo video](https://raw.githubusercontent.com/wiki/tedmiston/sublime-tower-plugin/images/demo.gif)
+
 ## Install
 
 Install via Package Control:
