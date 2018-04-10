@@ -1,5 +1,7 @@
 # Sublime Tower plugin
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/eb0bffbeb2ec6b122823/maintainability)](https://codeclimate.com/github/tedmiston/sublime-tower-plugin/maintainability)
+
 Open git repos from Sublime Text in [Tower](https://www.git-tower.com/).
 
 ![Demo video](https://raw.githubusercontent.com/wiki/tedmiston/sublime-tower-plugin/images/demo.gif)
