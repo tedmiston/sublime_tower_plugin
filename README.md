@@ -22,3 +22,10 @@ Install the plugin source code:
 To debug in the Sublime console:
 
 	view.run_command('tower_open')
+
+## Lint
+
+Run:
+
+	pycodestyle .
+	flake8
