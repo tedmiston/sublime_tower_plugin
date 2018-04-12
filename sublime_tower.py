@@ -10,15 +10,23 @@ import subprocess
 import sublime_plugin
 
 
+def build_cmd_is_in_repo(path):
+    return 'cd {} && git rev-parse --is-inside-work-tree'.format(path)
+
+
 def build_cmd_get_repo_root(path):
     return 'cd {} && git rev-parse --show-toplevel'.format(path)
+
+
+def build_cmd_open_in_tower(path):
+    return 'gittower {}'.format(path)
 
 
 def is_in_repo(path):
     """
     Return true if current file is inside of a repo.
     """
-    cmd = 'cd {} && git rev-parse --is-inside-work-tree'.format(path)
+    cmd = build_cmd_is_in_repo(path)
     try:
         output = subprocess.check_output(cmd, stderr=subprocess.STDOUT,
                                          shell=True, universal_newlines=True,
@@ -44,7 +52,7 @@ def open_in_tower(path):
 
     [0]: https://www.git-tower.com/
     """
-    cmd = 'gittower {}'.format(path)
+    cmd = build_cmd_open_in_tower(path)
     subprocess.check_output(cmd, shell=True, timeout=5)
 
 
