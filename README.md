@@ -36,6 +36,12 @@ To debug in the Sublime console:
 
 	view.run_command('tower_open')
 
+## Test
+
+This project uses the [SublimeText/UnitTesting](https://github.com/SublimeText/UnitTesting) test framework.
+
+In the command palette, run `UnitTesting: Test Current Package` or `UnitTesting: Test Current Package with Coverage`.
+
 ## Lint
 
 Run:

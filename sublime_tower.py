@@ -10,6 +10,10 @@ import subprocess
 import sublime_plugin
 
 
+def build_cmd_get_repo_root(path):
+    return 'cd {} && git rev-parse --show-toplevel'.format(path)
+
+
 def is_in_repo(path):
     """
     Return true if current file is inside of a repo.
@@ -28,7 +32,7 @@ def get_repo_root(path):
     """
     Determine the repo root directory from a nested path.
     """
-    cmd = 'cd {} && git rev-parse --show-toplevel'.format(path)
+    cmd = build_cmd_get_repo_root(path)
     output = subprocess.check_output(cmd, shell=True, universal_newlines=True,
                                      timeout=2)
     return output.strip()
