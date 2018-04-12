@@ -11,15 +11,15 @@ import sublime_plugin
 
 
 def build_cmd_is_in_repo(path):
-    return 'cd {} && git rev-parse --is-inside-work-tree'.format(path)
+    return 'cd "{}" && git rev-parse --is-inside-work-tree'.format(path)
 
 
 def build_cmd_get_repo_root(path):
-    return 'cd {} && git rev-parse --show-toplevel'.format(path)
+    return 'cd "{}" && git rev-parse --show-toplevel'.format(path)
 
 
 def build_cmd_open_in_tower(path):
-    return 'gittower {}'.format(path)
+    return 'gittower "{}"'.format(path)
 
 
 def is_in_repo(path):
