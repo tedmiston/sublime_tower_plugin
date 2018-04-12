@@ -1,10 +1,10 @@
 # Sublime Tower plugin
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/eb0bffbeb2ec6b122823/maintainability)](https://codeclimate.com/github/tedmiston/sublime-tower-plugin/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/eb0bffbeb2ec6b122823/maintainability)](https://codeclimate.com/github/tedmiston/sublime_tower_plugin/maintainability)
 
 Open git repos from Sublime Text in [Tower](https://www.git-tower.com/).
 
-![Demo video](https://raw.githubusercontent.com/wiki/tedmiston/sublime-tower-plugin/images/demo.gif)
+![Demo video](https://raw.githubusercontent.com/wiki/tedmiston/sublime_tower_plugin/images/demo.gif)
 
 ## Install
 
@@ -12,8 +12,8 @@ Open git repos from Sublime Text in [Tower](https://www.git-tower.com/).
 
 Install via GitHub:
 
-1. `Package Control: Add Repository` https://github.com/tedmiston/sublime-tower-plugin
-1. `Package Control: Install Package` sublime-tower-plugin
+1. `Package Control: Add Repository` https://github.com/tedmiston/sublime_tower_plugin
+1. `Package Control: Install Package` sublime_tower_plugin
 
 Note: this requires installing updates manually via `Package Control: Upgrade Package`.
 
@@ -30,7 +30,7 @@ Open `Command Palette` and type `Tower`.
 Install the plugin source code:
 
 	cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
-	git clone https://github.com/tedmiston/sublime-tower-plugin.git
+	git clone https://github.com/tedmiston/sublime_tower_plugin.git
 
 To debug in the Sublime console:
 
