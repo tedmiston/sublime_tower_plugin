@@ -5,6 +5,8 @@
 
 Open git repos from Sublime Text in [Tower](https://www.git-tower.com/).
 
+Tested on both Tower 2 and Tower 3 (beta channel).
+
 ![Demo video](https://raw.githubusercontent.com/wiki/tedmiston/sublime_tower_plugin/images/demo.gif)
 
 ## Install
