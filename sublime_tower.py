@@ -7,6 +7,7 @@ If you regularly open a shell to run `$ gittower .`, this is faster.
 import os.path
 import subprocess
 
+import sublime
 import sublime_plugin
 
 
@@ -66,6 +67,12 @@ class TowerOpenCommand(sublime_plugin.TextCommand):
         Sublime entrypoint.
         """
         current_file_path = self.view.file_name()
+
+        if not current_file_path:
+            msg = 'Error: Cannot open an unsaved file in Tower.'
+            sublime.error_message(msg)
+            return
+
         current_dir = os.path.dirname(current_file_path)
 
         if is_in_repo(current_dir):
