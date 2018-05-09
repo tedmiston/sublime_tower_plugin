@@ -17,7 +17,7 @@ Tested on both Tower 2 and Tower 3 (beta channel).
 
 (Alternative) Install via GitHub:
 
-1. `Package Control: Add Repository` https://github.com/tedmiston/sublime_tower_plugin
+1. `Package Control: Add Repository` <https://github.com/tedmiston/sublime_tower_plugin>
 1. `Package Control: Install Package` sublime_tower_plugin
 
     Note: this requires installing updates manually via `Package Control: Upgrade Package`.
@@ -30,12 +30,12 @@ Open `Command Palette` and type `Tower`.
 
 Install the plugin source code:
 
-	cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
-	git clone https://github.com/tedmiston/sublime_tower_plugin.git
+    cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+    git clone https://github.com/tedmiston/sublime_tower_plugin.git
 
 To debug in the Sublime console:
 
-	view.run_command('tower_open')
+    view.run_command('tower_open')
 
 ## Test
 
@@ -47,5 +47,5 @@ In the command palette, run `UnitTesting: Test Current Package` or `UnitTesting:
 
 Run:
 
-	pycodestyle .
-	flake8
+    pycodestyle .
+    flake8
