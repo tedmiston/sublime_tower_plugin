@@ -78,5 +78,3 @@ class TowerOpenCommand(sublime_plugin.TextCommand):
         if is_in_repo(current_dir):
             path = get_repo_root(current_dir)
             open_in_tower(path)
-        else:
-            pass
