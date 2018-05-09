@@ -54,7 +54,13 @@ def open_in_tower(path):
     [0]: https://www.git-tower.com/
     """
     cmd = build_cmd_open_in_tower(path)
-    subprocess.check_output(cmd, shell=True, timeout=5)
+    try:
+        subprocess.check_output(cmd, shell=True, timeout=5)
+    except subprocess.CalledProcessError as e:
+        sublime.error_message(
+            'Error: Tower CLI is not installed.\n\nEnable it at: Tower > '
+            'Preferences... > Integration > Tower Command Line Utility'
+        )
 
 
 class TowerOpenCommand(sublime_plugin.TextCommand):
