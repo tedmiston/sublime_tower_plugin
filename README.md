@@ -11,18 +11,16 @@ Tested on both Tower 2 and Tower 3 (beta channel).
 
 ## Install
 
-*The PR to be listed in Package Control [\#7046](https://github.com/wbond/package_control_channel/pull/7046) is currently pending acceptance.*
+(Recommended) Install via Package Control:
 
-Install via GitHub:
+1. Open `Package Control: Install Package` and search for `Tower`.
+
+(Alternative) Install via GitHub:
 
 1. `Package Control: Add Repository` https://github.com/tedmiston/sublime_tower_plugin
 1. `Package Control: Install Package` sublime_tower_plugin
 
-Note: this requires installing updates manually via `Package Control: Upgrade Package`.
-
-~~Install via Package Control:~~
-
-~~Open `Package Control: Install Package` and search for `Tower`.~~
+    Note: this requires installing updates manually via `Package Control: Upgrade Package`.
 
 ## Usage
 
