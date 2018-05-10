@@ -41,7 +41,10 @@ To debug in the Sublime console:
 
 This project uses the [SublimeText/UnitTesting](https://github.com/SublimeText/UnitTesting) test framework.
 
-In the command palette, run `UnitTesting: Test Current Package` or `UnitTesting: Test Current Package with Coverage`.
+In the command palette, you can run:
+
+- `UnitTesting: Test Current Package`
+- `UnitTesting: Test Current Package with Coverage`.
 
 ## Lint
 
