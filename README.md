@@ -27,12 +27,16 @@ Open `Command Palette` and type `Tower`.
 
 Install the plugin source code:
 
-    cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
-    git clone https://github.com/tedmiston/sublime_tower_plugin.git
+```shell
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+git clone https://github.com/tedmiston/sublime_tower_plugin.git
+```
 
 To debug in the Sublime console:
 
-    view.run_command('tower_open')
+```
+view.run_command('tower_open')
+```
 
 ## Test
 
@@ -45,9 +49,16 @@ In the command palette, you can run:
 
 Note: To run the tests, the plugin must be installed as source.  You can do that by doing a `git clone` in `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/`.
 
-## Lint
+## Misc
 
-Run:
+Lint:
 
-    pycodestyle .
-    flake8
+```shell
+flake8
+```
+
+Format:
+
+```shell
+black .
+```

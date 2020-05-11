@@ -1,37 +1,36 @@
 import sys
 import unittest
 
-sublime_tower = sys.modules['sublime_tower_plugin.sublime_tower']
+sublime_tower = sys.modules["sublime_tower_plugin.sublime_tower"]
 
 
 class SublimeTowerPluginTestCase(unittest.TestCase):
-
     def test_build_cmd_is_in_repo(self):
-        actual = sublime_tower.build_cmd_is_in_repo('test_dir')
+        actual = sublime_tower.build_cmd_is_in_repo("test_dir")
         expected = 'cd "test_dir" && git rev-parse --is-inside-work-tree'
         self.assertEqual(actual, expected)
 
     def test_build_cmd_is_in_repo_with_spaces(self):
-        actual = sublime_tower.build_cmd_is_in_repo('foo bar')
+        actual = sublime_tower.build_cmd_is_in_repo("foo bar")
         expected = 'cd "foo bar" && git rev-parse --is-inside-work-tree'
         self.assertEqual(actual, expected)
 
     def test_build_cmd_get_repo_root(self):
-        actual = sublime_tower.build_cmd_get_repo_root('test_dir')
+        actual = sublime_tower.build_cmd_get_repo_root("test_dir")
         expected = 'cd "test_dir" && git rev-parse --show-toplevel'
         self.assertEqual(actual, expected)
 
     def test_build_cmd_get_repo_root_with_spaces(self):
-        actual = sublime_tower.build_cmd_get_repo_root('foo bar')
+        actual = sublime_tower.build_cmd_get_repo_root("foo bar")
         expected = 'cd "foo bar" && git rev-parse --show-toplevel'
         self.assertEqual(actual, expected)
 
     def test_build_cmd_open_in_tower(self):
-        actual = sublime_tower.build_cmd_open_in_tower('test_dir')
+        actual = sublime_tower.build_cmd_open_in_tower("test_dir")
         expected = 'gittower "test_dir"'
         self.assertEqual(actual, expected)
 
     def test_build_cmd_open_in_tower_with_spaces(self):
-        actual = sublime_tower.build_cmd_open_in_tower('foo bar')
+        actual = sublime_tower.build_cmd_open_in_tower("foo bar")
         expected = 'gittower "foo bar"'
         self.assertEqual(actual, expected)
