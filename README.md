@@ -1,11 +1,8 @@
 # Sublime Tower plugin
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/5ab9fa0d51db7ca94521/maintainability)](https://codeclimate.com/github/tedmiston/sublime_tower_plugin/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/5ab9fa0d51db7ca94521/test_coverage)](https://codeclimate.com/github/tedmiston/sublime_tower_plugin/test_coverage)
 
-Open git repos from Sublime Text in [Tower](https://www.git-tower.com/).
-
-Tested on both Tower 2 and Tower 3 (beta channel).
+Open git repos from Sublime Text 3 in [Tower](https://www.git-tower.com/).
 
 ![Demo video](https://raw.githubusercontent.com/wiki/tedmiston/sublime_tower_plugin/images/demo.gif)
 
