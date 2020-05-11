@@ -46,6 +46,8 @@ In the command palette, you can run:
 - `UnitTesting: Test Current Package`
 - `UnitTesting: Test Current Package with Coverage`.
 
+Note: To run the tests, the plugin must be installed as source.  You can do that by doing a `git clone` in `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/`.
+
 ## Lint
 
 Run:
