@@ -1,6 +1,7 @@
 # Sublime Tower plugin
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/5ab9fa0d51db7ca94521/maintainability)](https://codeclimate.com/github/tedmiston/sublime_tower_plugin/maintainability)
+[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 Open git repos from Sublime Text 3 in [Tower](https://www.git-tower.com/).
 
